@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh Technologies</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/fontawesome/css/all.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            margin: 0px 20px 0px 20px;
+        }
+        .container-fluid {
+            padding: 0px 20px 0px 20px;
+            box-shadow: 1px 3px 5px 8px black;
+        }
+        .section-1 h1 {
+            padding: 20px 0px 20px 0px;
+        }
+        .section-1 .navbar {
+            border-radius: 5px;
+        }
+        .section-2 {
+            margin-top: 30px;
+        }
+        .section-2 h3 {
+            margin-bottom: 30px;
+        }
+        .section-2 .card {
+            box-shadow: 0px 5px 10px black;
+        }
+        .footer {
+            margin-top: 50px;
+            background-color: #404040;
+            padding: 30px;
+            color: white;
+        }
+        .footer ul {
+            color: white;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="section-1">
+            <h1 class="text-center">Naresh Institute and Technologies</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarcontent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarcontent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="service.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"><i class="fa fa-mobile" aria-hidden="true"></i> Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown nav-item ">
+                        <button class="btn btn-dark dropdown-toggle nav-link" type="button" id="dropdownbutton" data-toggle="dropdown">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            Sign In
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="signIn.html" class="dropdown-item"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign In</a>
+                            <a href="signup.html" class="dropdown-item"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+                            <a href="changepwd.html" class="dropdown-item"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Password</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="section-2">
+            <h3 class="text-center">Services</h3>
+            <div class="card-deck row justify-content-around">
+                <div class="card col-3">
+                    <div class="card-img card-img-top">
+                        <img src="Images/s1.jpg" width="280px" height="90px">
+                    </div>
+                    <div class="card-title">
+                        <p><i><b>WEB DESIGN!!</b></i></p>
+                    </div>
+                    <div class="card-text">
+                        <p><i>Online ordering system helps to maintain a Better Business Relationship with your customers, which is a key factor to run any successful business.</i></p>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-img card-img-top">
+                        <img src="Images/s2.jpg" width="280px" height="90px">
+                    </div>
+                    <div class="card-title">
+                        <p><i><b>IT SERVICES!!</b></i></p>
+                    </div>
+                    <div class="card-text">
+                        <p><i>We are ideally located in Larbert meaning we can offer IT support to businesses throughout Scotland. We take the hassle and worry out of your IT system by providing preventative and proactive IT support. </i></p>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-img card-img-top">
+                        <img src="Images/s3.png" width="280px" height="90px">
+                    </div>
+                    <div class="card-title">
+                        <p><i><b>WEB Marketing!!</b></i></p>
+                    </div>
+                    <div class="card-text">
+                        <p><i>We are passionate about digital content creation, strategy and delivery. We deliver results by designing marketing strategies which improve our clients brand visibility. </i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="text-center"><b>Naresh Technologies</b></p>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Name : Naresh Institute</li>
+                        <li>Email : info@nareshit.com</li>
+                        <li>Contact : +91-xxxxxxxxxx</li>
+                        <li>Address : Sr Nagar, Hyderabad, Telangana, India</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

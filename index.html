@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh Technologies</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/fontawesome/css/all.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            margin: 0px 20px 0px 20px;
+        }
+        .container-fluid {
+            padding: 0px 20px 0px 20px;
+            box-shadow: 1px 3px 5px 8px black;
+        }
+        .section-1 h1 {
+            padding: 20px 0px 20px 0px;
+        }
+        .section-1 .navbar {
+            border-radius: 5px;
+
+        }
+        .section-2 {
+            margin-top: 20px;
+        }
+        .section-3 div {
+            margin-top: 30px;
+        }
+        .section-3 div p {
+            width: 630px;
+            margin: auto;
+        }
+        .section-4 {
+            margin-top: 80px;
+        }
+        .section-4 div img:hover {
+            width: 380px;
+            height: 220px;
+        }
+        .section-5 {
+            margin-top: 80px;
+            background-color: rgba(128, 128, 255, 0.66);
+            padding: 20px;
+        }
+        .section-5 h3 {
+            margin-bottom: 20px;
+        }
+        .section-6 {
+            margin-top: 80px;
+        }
+        .section-6 .row {
+            margin-top: 50px;
+        }
+        .section-6 button {
+            margin-top: 20px;
+        }
+        .section-7 {
+            margin-top: 80px;
+            background-color: rgba(153, 153, 102, 0.66);
+            padding: 20px;
+        }
+        .section-7 h3 {
+            margin-bottom: 30px;
+        }
+        .section-7 h6 {
+            margin-top: 30px;
+        }
+        .section-8 {
+            margin-top: 30px;
+        }
+        .section-8 h3 {
+            margin-bottom: 30px;
+        }
+        .section-8 .card {
+            box-shadow: 0px 5px 10px black;
+        }
+        .section-9 {
+            margin-top: 50px;
+            background-color: #404040;
+            padding: 30px;
+            color: white;
+        }
+        .section-9 ul {
+            color: white;
+        }
+        .section-9 a {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="section-1">
+            <h1 class="text-center">Naresh Institute and Technologies</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarcontent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarcontent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"><i class="fa fa-mobile" aria-hidden="true"></i> Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown nav-item ">
+                        <button class="btn btn-dark dropdown-toggle nav-link" type="button" id="dropdownbutton" data-toggle="dropdown">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            Sign In
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="signIn.html" class="dropdown-item"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign In</a>
+                            <a href="signup.html" class="dropdown-item"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+                            <a href="changepwd.html" class="dropdown-item"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Password</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="section-2">
+            <div id="banners" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#banners" data-slide-to="0" class="active"></li>
+                    <li data-target="#banners" data-slide-to="1"></li>
+                    <li data-target="#banners" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="2000">
+                        <img src="Images/a1.jpg" height="500px" width="100%">
+                    </div>
+                    <div class="carousel-item"  data-interval="2000">
+                        <img src="Images/a2.jpg" height="500px" width="100%">
+                    </div>
+                    <div class="carousel-item"  data-interval="2000">
+                        <img src="Images/a3.jpg" height="500px" width="100%"> 
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#banners" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#banners" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="section-3">
+            <div class="text-center">
+                <button type="button" class="btn btn-warning">Show me what's in this package</button>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary">What is the package</button>
+            </div>
+            <div class="text-center">
+                <p>* A package is a small container in which a quantity of something is sold. Packages are either small boxes made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is packaged, it is put into containers to be sold.</p>
+            </div>
+        </div>
+        <div class="section-4 row">
+            <div class="col-8">
+                <table class="table table-striped text-center table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Included</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>M.Tech</td>
+                            <td><i class="fa fa-check-square text-success" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>B.Tech</td>
+                            <td><i class="fa fa-check-square text-success" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>MCA</td>
+                            <td><i class="fa fa-check-square text-success" aria-hidden="true"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4">
+                <img src="Images/a2.jpg" width="300em" height="180em">
+            </div>
+        </div>
+        <div class="section-5">
+            <h3 class="text-center">What is the job</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Types of jobs</h4>
+                    <p>Volconologist...</p>
+                    <p>Quantum physicist...</p>
+                    <p>Oceanographer...</p>
+                    <p>Biomedical engineer...</p>
+                </div>
+                <div class="col">
+                    <h4>Define job profile</h4>
+                    <p>Job profile developed by the personnel department of a business might include such things as job responsibilities, required qualifications, advancement prospects.</p>
+                </div>
+                <div class="col">
+                    <h4>Job profile summary</h4>
+                    <p class="text-justify">Profile summary is a summary of your education, skills, career experiences, and goals.</p>
+                </div>
+                <div class="col">
+                    <h4>The IT skills</h4>
+                    <p>Coding.</p>
+                    <p>Communication.</p>
+                    <p>Networks.</p>
+                    <p>Time Management.</p>
+                    <p>More Information Technology Skills</p>
+                </div>
+                <div class="col">
+                    <h4>Freshers key skills</h4>
+                    <p>Communication.</p>
+                    <p>Ability to Work Under Pressure.</p>
+                    <p>Decision Making.</p>
+                    <p>Time Management.</p>
+                    <p>Self-Motivation.</p>
+                    <p>Conflict Resolution.</p>
+                    <p>Personal Skills?Leadership.</p>
+                    <p>Adaptability</p>
+                </div>
+                <div class="col">
+                    <h4>Personal Skills</h4>
+                    <p class="text-justify">A skill is the ability to do something well, a certain competence or proficiency. Skills are typically acquired or developed through direct experiences and training, and they can require sustained effort.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-6">
+            <div class="row">
+                <div class="col-8">
+                    <div>
+                        <span style="font-size: 500%; color: yellow;">&#9312;</span>
+                        Why do you want this job?
+                    </div>
+                    <div>
+                        <p>The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="Images/ind1.jpg" width="300px" height="150px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/ind2.png" width="300px" height="150px">
+                </div>
+                <div class="col-8">
+                    <div>
+                        <span style="font-size: 500%; color: red;">&#9313;</span>
+                        What is a CV example?
+                    </div>
+                    <div>
+                        <p>A resume is a brief summary. ... If you were writing your resume you would include only the work information that relates specifically to the job you're applying for, but for a Curriculum Vitae, you would also include all your teaching experience, lab and field work..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div>
+                        <span style="font-size: 500%; color: green;">&#9314;</span>
+                        Do you need a resume for your first job?
+                    </div>
+                    <div>
+                        <p>When writing your first resume with no work experience, it's appropriate to include casual jobs like babysitting, pet sitting, lawn mowing, and shoveling snow. All experience counts and the way you present yourself, your skills, and your assets to a hiring manager begins with a strong resume.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="Images/ind3.png" width="300px" height="150px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/ind4.jpg" width="300px" height="150px">
+                </div>
+                <div class="col-8">
+                    <div>
+                        <span style="font-size: 500%; color: blue;">&#9315;</span>
+                        Why do you think you can do well in this job?
+                    </div>
+                    <div>
+                        <p>I believe I will do well in this job because I have the relevant skills and it is my field of interest. ... I have a confident that I can do well in the job because of self confidence, positive attitude. Previous success also brings self confidence for the future success. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center button">
+                <button type="button" class="btn btn-primary">Request call back</button>
+                <button class="btn btn-secondary" type="button">FAQ'S</button>
+            </div>
+        </div>
+        <div class="section-7">
+            <h3 class="text-center">Student Department Details</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Average Salary Offered</h4>
+                    <h3>INR 7 L per annum</h3>
+                    <h4>per annum</h4>
+                </div>
+                <div class="col">
+                    <h4>Duration</h4>
+                    <h3>2</h3>
+                    <h4>years</h4>
+                </div>
+                <div class="col">
+                    <h4>Average Fees Incurred</h4>
+                    <h3>INR 25,000 - 2 L</h3>
+                    <h4>per annum</h4>
+                </div>
+                <div class="col">
+                    <h4>Indian Institute of Technology, [IIT] Kanpur</h4>
+                    <h3>49,035</h3>
+                    <h4>Kanpur</h4>
+                </div>
+            </div>
+            <h6 class="text-center">* job: A group of homogeneous tasks related by similarity of functions.</h6>
+        </div>
+        <div class="section-8">
+            <h3 class="text-center">Services</h3>
+            <div class="card-deck row justify-content-around">
+                <div class="card col-3">
+                    <div class="card-img card-img-top">
+                        <img src="Images/s1.jpg" width="280px" height="90px">
+                    </div>
+                    <div class="card-title">
+                        <p><i><b>WEB DESIGN!!</b></i></p>
+                    </div>
+                    <div class="card-text">
+                        <p><i>Online ordering system helps to maintain a Better Business Relationship with your customers, which is a key factor to run any successful business.</i></p>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-img card-img-top">
+                        <img src="Images/s2.jpg" width="280px" height="90px">
+                    </div>
+                    <div class="card-title">
+                        <p><i><b>IT SERVICES!!</b></i></p>
+                    </div>
+                    <div class="card-text">
+                        <p><i>We are ideally located in Larbert meaning we can offer IT support to businesses throughout Scotland. We take the hassle and worry out of your IT system by providing preventative and proactive IT support. </i></p>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-img card-img-top">
+                        <img src="Images/s3.png" width="280px" height="90px">
+                    </div>
+                    <div class="card-title">
+                        <p><i><b>WEB Marketing!!</b></i></p>
+                    </div>
+                    <div class="card-text">
+                        <p><i>We are passionate about digital content creation, strategy and delivery. We deliver results by designing marketing strategies which improve our clients brand visibility. </i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section-9">
+            <p class="text-center"><b>Naresh Technologies</b></p>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Name : Naresh Institute</li>
+                        <li>Email : info@nareshit.com</li>
+                        <li>Contact : +91-xxxxxxxxxx</li>
+                        <li>Address : Sr Nagar, Hyderabad, Telangana, India</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body> 
+</html>
