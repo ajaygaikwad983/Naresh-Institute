@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naresh Technologies</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/fontawesome/css/all.css">
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/fontawesome/css/all.css">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <style>
         body {
             margin: 0px 20px 0px 20px;
@@ -16,8 +17,11 @@
             padding: 0px 20px 0px 20px;
             box-shadow: 1px 3px 5px 8px black;
         }
-        .section-1 h1 {
+        .section-1 .h1 {
+            font-size: 2em;
             padding: 20px 0px 20px 0px;
+            font-weight: bolder;
+            display: block;
         }
         .section-1 .navbar {
             border-radius: 5px;
@@ -37,8 +41,12 @@
             margin-top: 80px;
         }
         .section-4 div img:hover {
-            width: 380px;
-            height: 220px;
+            animation: imgHover 2s ease 0s 1 forwards;
+            /* animation-name: imgHover;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease; */
+            animation-fill-mode: forwards;
         }
         .section-5 {
             margin-top: 80px;
@@ -96,7 +104,7 @@
 <body>
     <div class="container-fluid">
         <header class="section-1">
-            <h1 class="text-center">Naresh Institute and Technologies</h1>
+            <p class="text-center h1">Naresh Institute and Technologies</p>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarcontent">
                     <span class="navbar-toggler-icon"></span>
@@ -139,13 +147,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="2000">
-                        <img src="Images/a1.jpg" height="500px" width="100%">
+                        <img src="Images/a1.jpg" width="100%">
                     </div>
                     <div class="carousel-item"  data-interval="2000">
-                        <img src="Images/a2.jpg" height="500px" width="100%">
+                        <img src="Images/a2.jpg" width="100%">
                     </div>
                     <div class="carousel-item"  data-interval="2000">
-                        <img src="Images/a3.jpg" height="500px" width="100%"> 
+                        <img src="Images/a3.jpg" width="100%"> 
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#banners" data-slide="prev">
@@ -164,12 +172,12 @@
                 <button type="button" class="btn btn-primary">What is the package</button>
             </div>
             <div class="text-center">
-                <p>* A package is a small container in which a quantity of something is sold. Packages are either small boxes made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is packaged, it is put into containers to be sold.</p>
+                <p style="width: auto;">* A package is a small container in which a quantity of something is sold. Packages are either small boxes made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is packaged, it is put into containers to be sold.</p>
             </div>
         </div>
         <div class="section-4 row">
-            <div class="col-8">
-                <table class="table table-striped text-center table-bordered">
+            <div class="col-lg-8 col-sm-12">
+                <table class="table table-striped text-center table-bordered alignTable">
                     <thead>
                         <tr>
                             <th>Department</th>
@@ -192,7 +200,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 hideImg">
                 <img src="Images/a2.jpg" width="300em" height="180em">
             </div>
         </div>
@@ -241,7 +249,7 @@
         </div>
         <div class="section-6">
             <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-md-12">
                     <div>
                         <span style="font-size: 500%; color: yellow;">&#9312;</span>
                         Why do you want this job?
@@ -250,15 +258,15 @@
                         <p>The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 hideImg">
                     <img src="Images/ind1.jpg" width="300px" height="150px">
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 hideImg">
                     <img src="Images/ind2.png" width="300px" height="150px">
                 </div>
-                <div class="col-8">
+                <div class="col-lg-8 col-md-12">
                     <div>
                         <span style="font-size: 500%; color: red;">&#9313;</span>
                         What is a CV example?
@@ -269,7 +277,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-md-12">
                     <div>
                         <span style="font-size: 500%; color: green;">&#9314;</span>
                         Do you need a resume for your first job?
@@ -278,15 +286,15 @@
                         <p>When writing your first resume with no work experience, it's appropriate to include casual jobs like babysitting, pet sitting, lawn mowing, and shoveling snow. All experience counts and the way you present yourself, your skills, and your assets to a hiring manager begins with a strong resume.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 hideImg">
                     <img src="Images/ind3.png" width="300px" height="150px">
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 hideImg">
                     <img src="Images/ind4.jpg" width="300px" height="150px">
                 </div>
-                <div class="col-8">
+                <div class="col-lg-8 col-md-12">
                     <div>
                         <span style="font-size: 500%; color: blue;">&#9315;</span>
                         Why do you think you can do well in this job?
@@ -330,9 +338,9 @@
         <div class="section-8">
             <h3 class="text-center">Services</h3>
             <div class="card-deck row justify-content-around">
-                <div class="card col-3">
+                <div class="card col-lg-3 col-sm-12">
                     <div class="card-img card-img-top">
-                        <img src="Images/s1.jpg" width="280px" height="90px">
+                        <img src="Images/s1.jpg" width="auto" height="90px">
                     </div>
                     <div class="card-title">
                         <p><i><b>WEB DESIGN!!</b></i></p>
@@ -341,9 +349,9 @@
                         <p><i>Online ordering system helps to maintain a Better Business Relationship with your customers, which is a key factor to run any successful business.</i></p>
                     </div>
                 </div>
-                <div class="card col-3">
+                <div class="card col-lg-3 col-sm-12">
                     <div class="card-img card-img-top">
-                        <img src="Images/s2.jpg" width="280px" height="90px">
+                        <img src="Images/s2.jpg" width="auto" height="90px">
                     </div>
                     <div class="card-title">
                         <p><i><b>IT SERVICES!!</b></i></p>
@@ -352,9 +360,9 @@
                         <p><i>We are ideally located in Larbert meaning we can offer IT support to businesses throughout Scotland. We take the hassle and worry out of your IT system by providing preventative and proactive IT support. </i></p>
                     </div>
                 </div>
-                <div class="card col-3">
+                <div class="card col-lg-3 col-sm-12">
                     <div class="card-img card-img-top">
-                        <img src="Images/s3.png" width="280px" height="90px">
+                        <img src="Images/s3.png" width="auto" height="90px">
                     </div>
                     <div class="card-title">
                         <p><i><b>WEB Marketing!!</b></i></p>
